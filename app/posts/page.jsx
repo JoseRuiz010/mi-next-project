@@ -8,9 +8,9 @@ async function loadPost() {
 }
 const Posts = async () => {
   const post = await loadPost()
-  console.log(post);
+  // console.log(post);
   return (
-    <div>Posts
+    <div>
       {
         post.map(p => <PostCard  {...p} />)
       }
